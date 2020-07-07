@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern>MY NAME IS *</pattern>
+        <template>Hello <star/>! My purpose is to share information with you about potential career trajectories in the IT field, 
+        and provide you with some direction if you do not know which trajectory suits you best.<br/>
+        If you would like guidance on selecting a career, please type "Help me pick a career".<br/>
+        If you would like to learn about some exciting career trajectories, please type "Tell me about my options"
+        <think><set name="student name"><star/></set></think>
+        </template>
+</category>
+
+<category>
+    <pattern>I AM *</pattern>
+        <template><srai>MY NAME IS <star/></srai></template>
+</category>
+
+<category>
+    <pattern>CALL ME *</pattern>
+        <template><srai>MY NAME IS <star/></srai></template>
+</category>
+
+<category>
+    <pattern>YOU CAN CALL ME *</pattern>
+        <template><srai>MY NAME IS <star/></srai></template>
+</category>
+
+<category>
+    <pattern>PLEASE CALL ME *</pattern>
+        <template><srai>MY NAME IS <star/></srai></template>
+</category>
+
+<category>
+    <pattern>*</pattern>
+        <that>WHAT IS YOUR NAME</that>
+        <template><srai>MY NAME IS <star/></srai></template>
+</category>
+
+</aiml>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+    <pattern>TELL ME ABOUT MY OPTIONS</pattern>
+        <template>I would love to <get name = "student name"></get>! You should know that in the IT industry, there is a lot of overlap, 
+        so divisions between occupations are not always neat in industry. Nevertheless, the U.S Bureau of Labor Statistics, in coordination with the Department of Labor, 
+        has identified ten occupations in their "Computer and Information Technology" category. You may learn about any of these occupations by clicking an option below.<br/>
+        
+                <button>
+                    <text>Computer and Information Research Scientists</text>
+                    <url>https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm</url>
+                </button>
+ 
+
+                <button>
+                    <text>Computer Network Architects</text>
+                    <url>https://www.bls.gov/ooh/computer-and-information-technology/computer-network-architects.htm</url>
+                </button>
+ 
+                <button>
+                    <text>Computer Programmers</text>
+                    <url>https://www.bls.gov/ooh/computer-and-information-technology/computer-programmers.htm</url>
+                </button>
+
+                <button>
+                    <text>Computer Support Specialists</text>
+                    <url>https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm</url>
+                </button>
+
+                <button>
+                    <text>Computer Systems Analysts</text>
+                    <url>https://www.bls.gov/ooh/computer-and-information-technology/computer-systems-analysts.htm</url>
+                </button>
+
+                <button>
+                    <text>Database Administrators</text>
+                    <url>https://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm</url>
+                </button>
+
+                <button>
+                    <text>Information Security Analysts</text>
+                    <url>https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm</url>
+                </button>
+ 
+                <button>
+                    <text>Network and Computer Systems Administrators</text>
+                    <url>https://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm</url>
+                </button>
+
+                <button>
+                    <text>Software Developers</text>
+                    <url>https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm</url>
+                </button>
+
+                <button>
+                    <text>Web Developers</text>
+                    <url>https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm</url>
+                </button>
+ 
+        
+        If you would like help selecting one of these options, please type "Help me pick a career". If none of these options are appealing, please schedule an appointment with advising.
+        </template>
+</category>
+
+<category>
+    <pattern>HELP ME PICK A CAREER</pattern>
+    <template>Certainly <get name = "student name"></get>, lets get started with a few yes or no questions.<br/>
+    Where appropriate, please respond with "yes" or "no". Do you have a strong interest in computer networking?
+    </template>
+</category>
+
+<category>
+    <pattern>YES</pattern>
+        <that>DO YOU HAVE A STRONG INTEREST IN COMPUTER NETWORKING</that>
+        <template>Given the choice, would you prefer to design a network or maintain it? Please respond with "design" or "maintain".</template>
+</category>
+
+<category>
+    <pattern>DESIGN</pattern>
+    <template>I think you should look into becoming
+    <link>
+        <text>a network architect.</text>
+        <url>https://www.bls.gov/ooh/computer-and-information-technology/computer-network-architects.htm</url>
+    </link> If this does not interest you, please explore the other options available by typing "tell me about my options".
+    </template>
+</category>
+
+<category>
+    <pattern>MAINTAIN</pattern>
+    <template>I think you should look into becoming 
+    <link>
+        <text>a sysadmin.</text>
+        <url>https://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm</url>
+    </link> If this does not interest you, please explore the other options available by typing "tell me about my options".
+    </template>
+</category>
+
+<category>
+    <pattern>NO</pattern>
+        <that>PLEASE ANSWER YES OR NO DO YOU HAVE A STRONG INTEREST IN COMPUTER NETWORKING</that>
+        <template>Not a problem <get name = "student name"></get>. Do you have an interest in cybersecurity?
+        </template>
+</category>
+
+<category>
+    <pattern>YES</pattern>
+        <that>DO YOU HAVE AN INTEREST IN CYBERSECURITY</that>
+        <template>You should definitely consider becoming 
+        <link>
+            <text>an information security analyst.</text>
+            <url>https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm</url>
+        </link> If this does not interest you, please explore the other options available by typing "tell me about my options".
+        </template>
+</category>
+
+<category>
+    <pattern>NO</pattern>
+        <that>DO YOU HAVE AN INTEREST IN CYBERSECURITY</that>
+        <template>Do you enjoy reading or writing code?
+        </template>
+</category>
+
+<category>
+    <pattern>YES</pattern>
+        <that>DO YOU ENJOY READING OR WRITING CODE</that>
+        <template> Do you prefer working on the front end or the back end? Please respond with "front" or "back".
+        </template>
+</category>
+
+<category>
+    <pattern>FRONT</pattern>
+    <template>There are a number of options available for you then <get name = "student name"></get>. 
+    The BLS has three occupational categories you should investigate with a great deal of overlap.<br/>
+    If you are graduating with an associate's degree, I recommend becoming
+    <link>
+        <text>a web developer.</text>
+        <url>https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm</url>
+    </link>. Otherwise, if you are graduating with a bachelor's degree you should look at becoming
+    <link>
+        <text>a computer programmer</text>
+        <url>https://www.bls.gov/ooh/computer-and-information-technology/computer-programmers.htm</url>
+    </link>
+    <link>
+        <text> or a software developer.</text>
+        <url>https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm</url>
+    </link> If this does not interest you, please explore the other options available by typing "tell me about my options".
+    </template>
+</category>
+
+<category>
+    <pattern>BACK</pattern>
+    <template>There are a number of options available for you then <get name = "student name"></get>. 
+    The BLS has three occupational categories you should investigate with a great deal of overlap.<br/>
+    You should look into becoming 
+    <link>
+        <text>a database administrator or developer,</text>
+        <url>https://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm</url>
+    </link>
+    <link>
+        <text>a computer programmer,</text>
+        <url>https://www.bls.gov/ooh/computer-and-information-technology/computer-programmers.htm</url>
+    </link>
+    <link>
+        <text>or a software developer.</text>
+        <url>https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm</url>
+    </link> If this does not interest you, please explore the other options available by typing "tell me about my options".
+    </template>
+</category>
+
+<category>
+    <pattern>NO</pattern>
+        <that>DO YOU ENJOY READING OR WRITING CODE</that>
+        <template>Are you interested in how business and information technology cooperate to create effective institutions?</template>
+</category>
+
+<category>
+    <pattern>YES</pattern>
+        <that>ARE YOU INTERESTED IN HOW BUSINESS AND INFORMATION TECHNOLOGY COOPERATE TO CREATE EFFECTIVE INSTITUTIONS</that>
+        <template>You should definitely consider becoming 
+        <link>
+            <text>a systems analyst then.</text>
+            <url>https://www.bls.gov/ooh/computer-and-information-technology/computer-systems-analysts.htm</url>
+        </link> If this does not interest you, please explore the other options available by typing "tell me about my options".
+        </template>
+</category>
+
+<category>
+    <pattern>NO</pattern>
+        <that>ARE YOU INTERESTED IN HOW BUSINESS AND INFORMATION TECHNOLOGY COOPERATE TO CREATE EFFECTIVE INSTITUTIONS</that>
+        <template>Are you now leaving, or plan to enter a graduate program?
+        </template>
+</category>
+
+<category>
+    <that>ARE YOU NOW LEAVING OR PLAN TO ENTER A GRADUATE PROGRAM</that>
+    <pattern>YES</pattern>
+    <template>I think you should look into your options as 
+    <link>
+        <text>a computer research scientist.</text>
+        <url>https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm</url>
+    </link> If this does not interest you, please explore the other options available by typing "tell me about my options".
+    </template>
+</category>
+
+<category>
+    <that>ARE YOU NOW LEAVING OR PLAN TO ENTER A GRADUATE PROGRAM</that>
+    <pattern>NO</pattern>
+    <template>You should explore your options as 
+    <link>
+        <text>a computer support specialist.</text>
+        <url>https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm</url>
+    </link> If this does not interest you, please explore the other options available by typing "tell me about my options".
+    </template>
+</category>
+
+</aiml>

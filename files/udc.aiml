@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I'm sorry, I am a simple bot with limited functions and I did not understand your response. I work best with unambiguous responses like "yes" or "no".<br/>
+    You can start a conversation with me by simply initiating a new one with a simple greeting. Try "Hi!" or "Hello!", or just tell me your name.<br/>
+    </template>
+  </category>
+</aiml>
