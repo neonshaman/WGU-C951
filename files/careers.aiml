@@ -64,8 +64,8 @@
 
 <category>
     <pattern>HELP ME PICK A CAREER</pattern>
-    <template>Certainly <get name = "student name"></get>, lets get started with a few yes or no questions.<br/>
-    Where appropriate, please respond with "yes" or "no". Do you have a strong interest in computer networking?
+    <template>Certainly <get name = "student name"></get>, lets get started with a few yes or no questions.
+    Where appropriate, please respond with yes or no. Do you have a strong interest in computer networking?
     </template>
 </category>
 
@@ -97,7 +97,7 @@
 
 <category>
     <pattern>NO</pattern>
-        <that>PLEASE ANSWER YES OR NO DO YOU HAVE A STRONG INTEREST IN COMPUTER NETWORKING</that>
+        <that>DO YOU HAVE A STRONG INTEREST IN COMPUTER NETWORKING</that>
         <template>Not a problem <get name = "student name"></get>. Do you have an interest in cybersecurity?
         </template>
 </category>
@@ -187,7 +187,7 @@
 <category>
     <pattern>NO</pattern>
         <that>ARE YOU INTERESTED IN HOW BUSINESS AND INFORMATION TECHNOLOGY COOPERATE TO CREATE EFFECTIVE INSTITUTIONS</that>
-        <template>Are you now leaving, or plan to enter a graduate program?
+        <template>Are you now leaving or plan to enter a graduate program?
         </template>
 </category>
 
